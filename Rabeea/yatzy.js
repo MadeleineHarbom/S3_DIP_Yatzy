@@ -1,6 +1,11 @@
 const YATZY = {
 
 /*
+ * this field is used to save the values of the lower textfields - from one-pair to yatzy
+ */
+sumBottom : 0,
+
+/*
  * an array of the dice-images
  */
 diceImages : [0,

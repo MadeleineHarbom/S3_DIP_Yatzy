@@ -4,11 +4,13 @@ const GUI = {
     diceClicked : function(element){
         let images = document.querySelectorAll("img");
 
-        // the value will change to true in the same index in 'holds' array and the img which is clicked will not change
+        // the dice images are disabled when the program runs & when the round ends (if a user choose a textfield)
+        // when the roll button is clicked the dice images will be activated and it will be possible to hold a dice image
         if(images[0].disabled == false) {
             for (let i = 0; i < YATZY.holds.length; i++) {
                 if (images[i] == element) {
                     images[i].style.border = "1px solid #fff";
+                    // the value will change to true in the same index in 'holds' array and the img which is clicked will not change
                     YATZY.holds[i] = true;
                 }
             }
@@ -55,6 +57,7 @@ const GUI = {
         // one of the result fields
         if (YATZY.throwCount == 3) {
             let button = document.querySelector("#roll");
+            button.style.backgroundColor = "#cccccc";
             button.disabled = true;
         }
 
@@ -68,6 +71,8 @@ const GUI = {
 
     let sum = document.querySelector("#sum-Tekstfelt");
 
+    let total = document.querySelector("#total-Tekstfelt");
+
     // If the dice are thrown, you can choose one of the result fields. Each time
     // you click one of the fields a new round will start and the number of
     // throws will be reset. In other words: you can not click/select more than one
@@ -77,13 +82,19 @@ const GUI = {
 
         let button = document.querySelector("#roll");
         button.disabled = false;
+        button.style.backgroundColor = "#ededed";
 
         for (let i = 0; i < txfResults.length; i++) {
 
-            // When one of the fields is selected, it will be deactivated
             if(txfResults[i] == element) {
-                sum.value = Number(sum.value) + Number(txfResults[i].value);
 
+                // if the field is between 1-s to 6-s the value will be added to the sum
+                if(i < 6) {
+                    sum.value = Number(sum.value) + Number(txfResults[i].value);
+                } else if (i >= 6) {
+                    YATZY.sumBottom = Number(YATZY.sumBottom) + Number(txfResults[i].value);
+                }
+                // When one of the fields is selected, it will be deactivated
                 txfResults[i].disabled = true;
             }
         }
@@ -95,8 +106,7 @@ const GUI = {
         }
 
         // sets the value of the total
-        let total = document.querySelector("#total-Tekstfelt");
-        total.value = Number(sum.value) + Number(bonus.value);
+        total.value = Number(YATZY.sumBottom) + Number(sum.value) + Number(bonus.value);
 
         // resets all values in the dice pane (dice face values, dice-images will be
         // unselected, rolled number will be reset and the Roll button will be
