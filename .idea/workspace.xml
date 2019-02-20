@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fe20dc22-8132-4c77-b364-43c74522c27a" name="Default Changelist" comment="" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="d06769dd-7aff-41d3-855f-0e2ba81d7fb7" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="3797bec4-5684-4ac4-a964-1479f8d474ff" name="Default Changelist" comment="" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,6 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yatzy.js">
@@ -28,12 +37,97 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor" />
+=======
+<<<<<<< HEAD
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rabeea/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rabeea/style.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Rabeea/GUI.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1315">
+              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yatzy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5244">
+              <caret line="228" column="7" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/Rabeea/yatzy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+=======
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+            </state>
+          </provider>
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+=======
+<<<<<<< HEAD
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GUI.js" />
+        <option value="$PROJECT_DIR$/Tom/mine ændreinger til terningenre.js" />
+      </list>
+    </option>
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -42,21 +136,42 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="960" />
     <option name="height" value="980" />
   </component>
+=======
+<<<<<<< HEAD
+    <option name="x" value="680" />
+    <option name="y" value="455" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+    <option name="x" value="-32" />
+    <option name="y" value="-21" />
+    <option name="width" value="1777" />
+    <option name="height" value="1100" />
+  </component>
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="Yatzy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Yatzy" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -64,17 +179,26 @@
               <item name="Yatzy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Yatzy" type="462c0819:PsiDirectoryNode" />
               <item name="temp" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="S3_DIP_Yatzy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="S3_DIP_Yatzy" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -85,6 +209,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karl-\Documents\DMU\3. semester\Yatzy\temp" />
     </key>
+=======
+<<<<<<< HEAD
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rabee\OneDrive\Dokumenter\S3_DIP_Yatzy\Rabeea" />
+    </key>
+=======
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -98,32 +239,74 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Yatzy/index.html" useBuiltInWebServerPort="true">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/S3_DIP_Yatzy/Rabeea/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/S3_DIP_Yatzy/index.html" useBuiltInWebServerPort="true">
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+=======
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="fe20dc22-8132-4c77-b364-43c74522c27a" name="Default Changelist" comment="" />
       <created>1550650253670</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550650253670</updated>
       <workItem from="1550650254965" duration="1824000" />
+=======
+<<<<<<< HEAD
+      <changelist id="d06769dd-7aff-41d3-855f-0e2ba81d7fb7" name="Default Changelist" comment="" />
+      <created>1550649235369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550649235369</updated>
+      <workItem from="1550649236879" duration="2454000" />
+=======
+      <changelist id="3797bec4-5684-4ac4-a964-1479f8d474ff" name="Default Changelist" comment="" />
+      <created>1550649100974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550649100974</updated>
+      <workItem from="1550649104121" duration="2759000" />
+      <workItem from="1550651934518" duration="715000" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1824000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="2454000" />
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -135,6 +318,19 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+<<<<<<< HEAD
+=======
+=======
+    <option name="totallyTimeSpent" value="3474000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11116965" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -142,6 +338,16 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -151,6 +357,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -180,5 +387,86 @@
     <entry file="file://$PROJECT_DIR$/temp/GUI.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="16" column="112" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="256" lean-forward="true" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1057">
+          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rabeea/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rabeea/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rabeea/yatzy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rabeea/GUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1315">
+          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/Tom/mine ændreinger til terningenre.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5244">
+          <caret line="228" column="7" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+>>>>>>> 1ecdd1927c71d2063d63f1687898d553b40525ae
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 16e0198a8b3bc31466e491ca25c04ea7d796614d
   </component>
 </project>
