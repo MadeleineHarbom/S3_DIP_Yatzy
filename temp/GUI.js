@@ -4,15 +4,23 @@ const GUI = {
     diceClicked : function(element){
         let images = document.querySelectorAll("img");
 
-        // the value will change to true in the same index in 'holds' array and the img which is clicked will not change
+        // if holds = false the value will change to true in the same index in 'holds' array and the img which is clicked will not change
+        // if holds = true the value will change to false in the same index in 'holds' array and the img which is clicked will change
         if(images[0].disabled == false) {
             for (let i = 0; i < YATZY.holds.length; i++) {
                 if (images[i] == element) {
-                    images[i].style.border = "1px solid #fff";
-                    YATZY.holds[i] = true;
+                    if (YATZY.holds[i] == false ) {
+                        images[i].style.border = "1px solid #fff";
+                        YATZY.holds[i] = true;
+                    } else if (YATZY.holds[i] == true) {
+                        images[i].style.border = "";
+                        YATZY.holds[i] = false;
+                    }
+
                 }
             }
         }
+
     },
 
     // button method
