@@ -61,109 +61,109 @@ const GUI = {
             button.disabled = true;
         }
 
-},
+    },
 
     // method which is called when the user clicks on one of the result
     // fields/values
     endCurrentRound : function(element) {
 
-    let images = document.querySelectorAll("img");
+        let images = document.querySelectorAll("img");
 
-    let sum = document.querySelector("#sum-Tekstfelt");
+        let sum = document.querySelector("#sum-Tekstfelt");
 
-    let total = document.querySelector("#total-Tekstfelt");
+        let total = document.querySelector("#total-Tekstfelt");
 
-    // If the dice are thrown, you can choose one of the result fields. Each time
-    // you click one of the fields a new round will start and the number of
-    // throws will be reset. In other words: you can not click/select more than one
-    // field each time you throw
-    if (YATZY.throwCount != 0) {
-        let txfResults = document.querySelectorAll("input");
+        // If the dice are thrown, you can choose one of the result fields. Each time
+        // you click one of the fields a new round will start and the number of
+        // throws will be reset. In other words: you can not click/select more than one
+        // field each time you throw
+        if (YATZY.throwCount != 0) {
+            let txfResults = document.querySelectorAll("input");
 
-        let button = document.querySelector("#roll");
-        button.disabled = false;
-        button.style.backgroundColor = "#ededed";
+            let button = document.querySelector("#roll");
+            button.disabled = false;
+            button.style.backgroundColor = "#ededed";
 
-        for (let i = 0; i < txfResults.length; i++) {
+            for (let i = 0; i < txfResults.length; i++) {
 
-            if(txfResults[i] == element) {
+                if(txfResults[i] == element) {
 
-                // if the field is between 1-s to 6-s the value will be added to the sum
-                if(i < 6) {
-                    sum.value = Number(sum.value) + Number(txfResults[i].value);
-                } else if (i >= 6) {
-                    YATZY.sumBottom = Number(YATZY.sumBottom) + Number(txfResults[i].value);
+                    // if the field is between 1-s to 6-s the value will be added to the sum
+                    if(i < 6) {
+                        sum.value = Number(sum.value) + Number(txfResults[i].value);
+                    } else if (i >= 6) {
+                        YATZY.sumBottom = Number(YATZY.sumBottom) + Number(txfResults[i].value);
+                    }
+                    // When one of the fields is selected, it will be deactivated
+                    txfResults[i].disabled = true;
                 }
-                // When one of the fields is selected, it will be deactivated
-                txfResults[i].disabled = true;
             }
-        }
 
-        // if the sum is 63 or more - the bonus field will be 50
-        let bonus = document.querySelector("#bonus-Tekstfelt");
-        if (sum.value >= 63) {
-            bonus.value = "50";
-        }
-
-        // sets the value of the total
-        total.value = Number(YATZY.sumBottom) + Number(sum.value) + Number(bonus.value);
-
-        // resets all values in the dice pane (dice face values, dice-images will be
-        // unselected, rolled number will be reset and the Roll button will be
-        // activated)
-        for (let i = 0; i < YATZY.values.length; i++) {
-            YATZY.values[i] = 0;
-            images[i].disabled = true; // the images with the dices are deactivated until the roll-button is clicked
-            images[i].style.border = "initial";
-            YATZY.holds[i] = false;
-        }
-        YATZY.resetThrowCount();
-        let turn = document.querySelector("p");
-        // updates the rolled number
-        turn.innerHTML = "Turn: " + YATZY.throwCount;
-
-        // counts the number of rounds
-        let roundCount = 0;
-
-        for (let i = 0; i < txfResults.length; i++) {
-            // each time a field is disabled which means when a field is selected
-            if (txfResults[i].disabled == true) {
-                roundCount = roundCount + 1; // then it will count a round
+            // if the sum is 63 or more - the bonus field will be 50
+            let bonus = document.querySelector("#bonus-Tekstfelt");
+            if (sum.value >= 63) {
+                bonus.value = "50";
             }
-        }
 
-        // If you reach 15 rounds, a popup window will appear telling that the game is
-        // over - at that time all the fields have already been selected (and
-        // deactivated) The user will then get an option to play again
-        if (roundCount == 15) {
-            let answer = confirm("The game is finished - your total score is: " + total.value + "\n\n"
-                + "Would you like to play again?");
+            // sets the value of the total
+            total.value = Number(YATZY.sumBottom) + Number(sum.value) + Number(bonus.value);
 
-            // If the user clicks on the OK button, it means that the user wants to play
-            // again and the entire game will be reset
-            if (answer == true) {
-                for (let i = 0; i < txfResults.length; i++) {
-                    txfResults[i].disabled = false;
-                    txfResults[i].value = "0";
+            // resets all values in the dice pane (dice face values, dice-images will be
+            // unselected, rolled number will be reset and the Roll button will be
+            // activated)
+            for (let i = 0; i < YATZY.values.length; i++) {
+                YATZY.values[i] = 0;
+                images[i].disabled = true; // the images with the dices are deactivated until the roll-button is clicked
+                images[i].style.border = "initial";
+                YATZY.holds[i] = false;
+            }
+            YATZY.resetThrowCount();
+            let turn = document.querySelector("p");
+            // updates the rolled number
+            turn.innerHTML = "Turn: " + YATZY.throwCount;
+
+            // counts the number of rounds
+            let roundCount = 0;
+
+            for (let i = 0; i < txfResults.length; i++) {
+                // each time a field is disabled which means when a field is selected
+                if (txfResults[i].disabled == true) {
+                    roundCount = roundCount + 1; // then it will count a round
                 }
-                for(let i = 0; i < images.length; i++) {
-                    images[i].style.border = "initial";
-                }
-                sum.value = 0;
-                total.value = 0;
-                roundCount = 0;
-            } else {
-                let button = document.querySelector("#roll");
-                button.disabled = true;
             }
-        }
 
-        // If the user chooses more than one field in the same round (with only one
-        // roll) a popup window will appear asking the user to Roll/throw the dices
-        // first
-    } else {
-        alert("You must roll one time before choosing a field");
+            // If you reach 15 rounds, a popup window will appear telling that the game is
+            // over - at that time all the fields have already been selected (and
+            // deactivated) The user will then get an option to play again
+            if (roundCount == 15) {
+                let answer = confirm("The game is finished - your total score is: " + total.value + "\n\n"
+                    + "Would you like to play again?");
+
+                // If the user clicks on the OK button, it means that the user wants to play
+                // again and the entire game will be reset
+                if (answer == true) {
+                    for (let i = 0; i < txfResults.length; i++) {
+                        txfResults[i].disabled = false;
+                        txfResults[i].value = "0";
+                    }
+                    for(let i = 0; i < images.length; i++) {
+                        images[i].style.border = "initial";
+                    }
+                    sum.value = 0;
+                    total.value = 0;
+                    roundCount = 0;
+                } else {
+                    let button = document.querySelector("#roll");
+                    button.disabled = true;
+                }
+            }
+
+            // If the user chooses more than one field in the same round (with only one
+            // roll) a popup window will appear asking the user to Roll/throw the dices
+            // first
+        } else {
+            alert("You must roll one time before choosing a field");
+        }
     }
-}
 
 }

@@ -1,140 +1,140 @@
 const YATZY = {
 
-/*
- * this field is used to save the values of the lower textfields - from one-pair to yatzy
- */
-sumBottom : 0,
+    /*
+     * this field is used to save the values of the lower textfields - from one-pair to yatzy
+     */
+    sumBottom : 0,
 
-/*
- * an array of the dice-images
- */
-diceImages : [0,
-    "images/terning-1-prik.png",
-    "images/terning-2-prikker.png",
-    "images/terning-3-prikker.png",
-    "images/terning-4-prikker.png",
-    "images/terning-5-prikker.png",
-    "images/terning-6-prikker.png"
-],
+    /*
+     * an array of the dice-images
+     */
+    diceImages : [0,
+        "images/terning-1-prik.png",
+        "images/terning-2-prikker.png",
+        "images/terning-3-prikker.png",
+        "images/terning-4-prikker.png",
+        "images/terning-5-prikker.png",
+        "images/terning-6-prikker.png"
+    ],
 
-/**
- * Face values of the 5 dice.
- * 1 <= values[i] <= 6.
- */
-values : new Array(5),
+    /**
+     * Face values of the 5 dice.
+     * 1 <= values[i] <= 6.
+     */
+    values : new Array(5),
 
-/**
- * Number of times the 5 dice have been thrown.
- * 0 <= throwCount <= 3.
- */
-throwCount : 0,
+    /**
+     * Number of times the 5 dice have been thrown.
+     * 0 <= throwCount <= 3.
+     */
+    throwCount : 0,
 
 // The values in the array are used to identify whether the user want to hold a dice or not
-holds : [ false, false, false, false, false ],
+    holds : [ false, false, false, false, false ],
 
-/**
- * Rolls the 5 dice. <br/>
- * Only roll dice that are not hold. <br/>
- * Requires: holds contain 5 boolean values.
- */
+    /**
+     * Rolls the 5 dice. <br/>
+     * Only roll dice that are not hold. <br/>
+     * Requires: holds contain 5 boolean values.
+     */
 
-throwDice : function(array) {
-    let images = document.querySelectorAll("img");
-    for (let i = 0; i < YATZY.values.length; i++) {
-        if (array[i] == false) {
-            // return a number between 1-6
-            YATZY.values[i] = Math.trunc((Math.random() * 6) + 1);
+    throwDice : function(array) {
+        let images = document.querySelectorAll("img");
+        for (let i = 0; i < YATZY.values.length; i++) {
+            if (array[i] == false) {
+                // return a number between 1-6
+                YATZY.values[i] = Math.trunc((Math.random() * 6) + 1);
+            }
         }
-    }
-    YATZY.throwCount++;
-},
+        YATZY.throwCount++;
+    },
 
-/**
- * Resets the throw count.
- */
-resetThrowCount : function () {
-    YATZY.throwCount = 0;
-},
+    /**
+     * Resets the throw count.
+     */
+    resetThrowCount : function () {
+        YATZY.throwCount = 0;
+    },
 
-/**
- * Returns all results possible with the current face values. <br/>
- * The order of the results is the same as on the score board.
- */
-getPossibleResults : function () {
-    let results = new Array(15);
-    for (let i = 0; i <= 5; i++) {
-        results[i] = YATZY.valueSpecificFace(i + 1);
-    }
-    results[6] = YATZY.valueOnePair();
-    results[7] = YATZY.valueTwoPair();
-    results[8] = YATZY.valueThree();
-    results[9] = YATZY.valueFour();
-    results[10] = YATZY.valueFullHouse();
-    results[11] = YATZY.valueSmallStraight();
-    results[12] = YATZY.valueLargeStraight();
-    results[13] = YATZY.valueChance();
-    results[14] = YATZY.valueYatzy();
-    return results;
-},
-
-/**
- * Returns an int[7] containing the frequency of face values. <br/>
- * Frequency at index v is the number of dice with the face value v, 1 <= v <=
- * 6. <br/>
- * Index 0 is not used.
- */
-freqFaceValue : function () {
-    let valueOne = 0;
-    let valueTwo = 0;
-    let valueThree = 0;
-    let valueFour = 0;
-    let valueFive = 0;
-    let valueSix = 0;
-
-    for (let i = 0; i < YATZY.values.length; i++) {
-        if (YATZY.values[i] == 1) {
-            valueOne++;
-        } else if (YATZY.values[i] == 2) {
-            valueTwo++;
-        } else if (YATZY.values[i] == 3) {
-            valueThree++;
-        } else if (YATZY.values[i] == 4) {
-            valueFour++;
-        } else if (YATZY.values[i] == 5) {
-            valueFive++;
-        } else if (YATZY.values[i] == 6) {
-            valueSix++;
+    /**
+     * Returns all results possible with the current face values. <br/>
+     * The order of the results is the same as on the score board.
+     */
+    getPossibleResults : function () {
+        let results = new Array(15);
+        for (let i = 0; i <= 5; i++) {
+            results[i] = YATZY.valueSpecificFace(i + 1);
         }
+        results[6] = YATZY.valueOnePair();
+        results[7] = YATZY.valueTwoPair();
+        results[8] = YATZY.valueThree();
+        results[9] = YATZY.valueFour();
+        results[10] = YATZY.valueFullHouse();
+        results[11] = YATZY.valueSmallStraight();
+        results[12] = YATZY.valueLargeStraight();
+        results[13] = YATZY.valueChance();
+        results[14] = YATZY.valueYatzy();
+        return results;
+    },
 
-    }
-    let sameFaceValues = [0, valueOne, valueTwo, valueThree, valueFour, valueFive, valueSix];
+    /**
+     * Returns an int[7] containing the frequency of face values. <br/>
+     * Frequency at index v is the number of dice with the face value v, 1 <= v <=
+     * 6. <br/>
+     * Index 0 is not used.
+     */
+    freqFaceValue : function () {
+        let valueOne = 0;
+        let valueTwo = 0;
+        let valueThree = 0;
+        let valueFour = 0;
+        let valueFive = 0;
+        let valueSix = 0;
 
-    return sameFaceValues;
-},
+        for (let i = 0; i < YATZY.values.length; i++) {
+            if (YATZY.values[i] == 1) {
+                valueOne++;
+            } else if (YATZY.values[i] == 2) {
+                valueTwo++;
+            } else if (YATZY.values[i] == 3) {
+                valueThree++;
+            } else if (YATZY.values[i] == 4) {
+                valueFour++;
+            } else if (YATZY.values[i] == 5) {
+                valueFive++;
+            } else if (YATZY.values[i] == 6) {
+                valueSix++;
+            }
 
-/**
- * Returns the total value for the dice currently showing the given face value
- *
- * @param face
- *            the face value to return values for
- */
-valueSpecificFace : function (face) {
-    let value_specific_face = YATZY.freqFaceValue();
+        }
+        let sameFaceValues = [0, valueOne, valueTwo, valueThree, valueFour, valueFive, valueSix];
 
-    let value = value_specific_face[face] * face;
-    return value;
-},
+        return sameFaceValues;
+    },
 
-/**
- * Returns the maximum value for n-of-a-kind for the given n. <br/>
- * For example, valueManyOfAKind(3) returns the maximum value for 3 of-a-kind.
- * <br/>
- * Requires: 1 <= faceValue and faceValue <= 6
- *
- * @param n
- *            number of kind
- */
-valueManyOfAKind : function (n) {
+    /**
+     * Returns the total value for the dice currently showing the given face value
+     *
+     * @param face
+     *            the face value to return values for
+     */
+    valueSpecificFace : function (face) {
+        let value_specific_face = YATZY.freqFaceValue();
+
+        let value = value_specific_face[face] * face;
+        return value;
+    },
+
+    /**
+     * Returns the maximum value for n-of-a-kind for the given n. <br/>
+     * For example, valueManyOfAKind(3) returns the maximum value for 3 of-a-kind.
+     * <br/>
+     * Requires: 1 <= faceValue and faceValue <= 6
+     *
+     * @param n
+     *            number of kind
+     */
+    valueManyOfAKind : function () {
     let freq;
     freq = YATZY.freqFaceValue();
     let value = 0;

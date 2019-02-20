@@ -82,7 +82,7 @@
 }
 
 #smallStraight-Tekst {
-     grid-area: smallStraight-Tekst;
+    grid-area: smallStraight-Tekst;
 }
 
 #largeStraight-Tekst {
@@ -90,7 +90,7 @@
 }
 
 #chance-Tekst {
-     grid-area: chance-Tekst;
+    grid-area: chance-Tekst;
 }
 
 #yatzy-Tekst {
@@ -102,7 +102,7 @@
 }
 
 #bonus-Tekst {
-     grid-area: bonus-Tekst;
+    grid-area: bonus-Tekst;
 }
 
 #total-Tekst {
